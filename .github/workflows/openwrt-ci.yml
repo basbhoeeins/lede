@@ -60,7 +60,7 @@ jobs:
           ./scripts/feeds install -a
 
       - name: SSH connection to Actions
-        run: P3TERX/ssh2actions@v1.0.0
+        uses: P3TERX/ssh2actions@v1.0.0
 
       - name: Generate configuration file
         run: make defconfig
